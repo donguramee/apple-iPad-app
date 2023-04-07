@@ -262,7 +262,7 @@ header .search input {
 header .search .search-icon {
   width: 40px;
   height: var(--header-height);
-  background-image: url(../images/header_search.svg);
+  background-image: url("../images/header_search.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -273,7 +273,7 @@ header .search .search-icon {
 header .search .search-closer {
   width: 40px;
   height: var(--header-height);
-  background-image: url(../images/header_close.svg);
+  background-image: url("../images/header_close.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -386,7 +386,7 @@ nav .menu li.active:hover a {
   padding-bottom: 110px;
 }
 .hero h1 {
-  background-image: url(../images/hero_ipad_text.png);
+  background-image: url("../images/hero_ipad_text.png");
   width: 221px;
   height: 91px;
   position: absolute;
@@ -403,25 +403,25 @@ nav .menu li.active:hover a {
   width: 120px;
   height: 84px;
   transform: translate(43px, 580px);
-  background-image: url(../images/hero_ipad_caption_camera.png);
+  background-image: url("../images/hero_ipad_caption_camera.png");
 }
 .hero figure figcaption .caption-chip {
   width: 95px;
   height: 43px;
   transform: translate(589px, 510px);
-  background-image: url(../images/hero_ipad_caption_chip.png);
+  background-image: url("../images/hero_ipad_caption_chip.png");
 }
 .hero figure figcaption .caption-storage {
   width: 80px;
   height: 43px;
   transform: translate(627px, 631px);
-  background-image: url(../images/hero_ipad_caption_storage.png);
+  background-image: url("../images/hero_ipad_caption_storage.png");
 }
 .hero h2 {
   width: 738px;
   height: 145px;
   margin: 0 auto;
-  background-image: url(../images/hero_headline.png);
+  background-image: url("../images/hero_headline.png");
 }
 .hero p.pricing {
   margin-top: 40px;
@@ -437,4 +437,30 @@ nav .menu li.active:hover a {
 }
 .hero .links {
   margin-top: 30px;
+}
+
+/* Power */
+.power {
+  margin-top: 110px;
+}
+/* power / multiple */
+
+/* power / arcade */
+.power .arcade {
+}
+.power .arcade .figures {
+}
+.power .arcade figure {
+}
+.power .arcade figcaption {
+}
+
+/* power / create */
+.power .create {
+}
+.power .create .figures {
+}
+.power .create figure {
+}
+.power .create figcaption {
 }

@@ -93,9 +93,14 @@ a.link:hover {
 a.link::after {
   content: " >";
 }
+/* Feature */
+.feature {
+  display: flex;
+}
 
 /* Figures */
 .figures {
+  flex-grow: 1;
   position: relative;
 }
 .figures figure,
@@ -108,6 +113,88 @@ a.link::after {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* INFOS */
+.infos {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.infos.infos--center {
+  justify-content: center;
+}
+.infos.infos--end {
+  justify-content: flex-end;
+}
+.info {
+  max-width: 330px;
+  margin-bottom: 24px;
+}
+.info .icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 -15px -30px;
+}
+.info .icon.icon--chip {
+  background-image: url("../images/sprite_chip.png");
+}
+.info .icon.icon--faster {
+  background-image: url("../images/sprite_faster.png");
+}
+.info .icon.icon--neural {
+  background-image: url("../images/sprite_neural.png");
+}
+.info .icon.icon--apps {
+  background-image: url("../images/sprite_apps.png");
+}
+.info .icon.icon--battery {
+  background-image: url("../images/sprite_battery.png");
+}
+.info .icon.icon--display {
+  background-image: url("../images/sprite_display.png");
+}
+.info .icon.icon--true-tone {
+  background-image: url("../images/sprite_true_tone.png");
+}
+.info .icon.icon--center-stage {
+  background-image: url("../images/sprite_center_stage.png");
+}
+.info .icon.icon--front-camera {
+  background-image: url("../images/sprite_front_camera.png");
+}
+.info .icon.icon--back-camera {
+  background-image: url("../images/sprite_back_camera.png");
+}
+.info .icon.icon--scan {
+  background-image: url("../images/sprite_scan.png");
+}
+.info .icon.icon--download {
+  background-image: url("../images/sprite_download.png");
+}
+.info .icon.icon--wifi {
+  background-image: url("../images/sprite_wifi.png");
+}
+.info .icon.icon--lte {
+  background-image: url("../images/sprite_lte.png");
+}
+.info .icon.icon--pencil {
+  background-image: url("../images/sprite_pencil.png");
+}
+.info .icon.icon--keyboard {
+  background-image: url("../images/sprite_keyboard.png");
+}
+.info .icon.icon--notes {
+  background-image: url("../images/sprite_notes.png");
+}
+.info .icon.icon--covers {
+  background-image: url("../images/sprite_covers.png");
+}
+.info p {
+  font-size: 21.5px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 /* Header */
@@ -444,23 +531,51 @@ nav .menu li.active:hover a {
   margin-top: 110px;
 }
 /* power / multiple */
-
+.power .multiple-apps h1 {
+  width: 500px;
+  height: 280px;
+  background-image: url("../images/power_headline.png");
+  transform: translate(104px, 0);
+}
+.power .multiple-apps .figures {
+  height: 773px;
+}
+.power .multiple-apps figcaption {
+  width: 138px;
+  height: 46px;
+  background-image: url("../images/power_multiple_apps_caption.png");
+  transform: translate(703px, -47px);
+}
 /* power / arcade */
 .power .arcade {
+  margin-top: 55px;
 }
 .power .arcade .figures {
+  height: 600px;
 }
 .power .arcade figure {
+  transform: translate(-347px, -90px);
 }
 .power .arcade figcaption {
+  width: 150px;
+  height: 77px;
+  background-image: url("../images/power_arcade_caption.png");
+  transform: translate(483px, 653px);
 }
 
 /* power / create */
 .power .create {
+  margin-top: 55px;
 }
 .power .create .figures {
+  height: 772px;
 }
 .power .create figure {
+  transform: translate(-25px, 50px);
 }
 .power .create figcaption {
+  width: 142px;
+  height: 46px;
+  background-image: url("../images/power_create_caption.png");
+  transform: translate(543px, 908px);
 }

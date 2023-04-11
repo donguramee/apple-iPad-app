@@ -513,6 +513,10 @@ nav .menu li.active a {
 nav .menu li.active:hover a {
   color: var(--color-font);
 }
+/* main */
+main {
+  overflow-x: hidden;
+}
 
 /* Hero */
 .hero {
@@ -1196,6 +1200,46 @@ footer .navigations .map li a {
   color: var(--color-font-darkgray);
 }
 footer .navigations .map li a:hover {
+  text-decoration: underline;
+}
+footer .how-to-shop {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-font-darkgray);
+}
+footer .how-to-shop a {
+  color: var(--color-link);
+}
+footer .how-to-shop a:hover {
+  text-decoration: underline;
+}
+footer .legal {
+  margin-top: 10px;
+  padding: 10px 0 40px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: 50px;
+  font-size: 12px;
+  color: var(--color-font-darkgray);
+}
+footer .legal ul {
+  display: flex;
+  gap: 21px;
+  flex-grow: 1;
+}
+footer .legal ul li {
+  position: relative;
+}
+footer .legal ul li::after {
+  content: "|";
+  position: absolute;
+  right: -11px;
+  color: var(--color-border);
+}
+footer .legal ul li:last-child:after {
+  display: none;
+}
+footer .legal ul li:hover a {
   text-decoration: underline;
 }
 

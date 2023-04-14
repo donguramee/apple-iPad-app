@@ -1352,6 +1352,52 @@ main {
   background-image: url("../images/camera_edit_caption.png");
   transform: translate(27px, 905px);
 }
+
+@media (max-width: 1000px) {
+  .camera {
+    margin-top: 165px;
+  }
+  .camera .stage h1 {
+    width: 405px;
+    height: 270px;
+    transform: translate(0, 0);
+  }
+  .camera .stage .info {
+    top: 0;
+  }
+  .camera .stage .figures {
+    height: 500px;
+  }
+  .camera .stage figure img {
+    width: 678px;
+  }
+  .camera .stage video {
+    top: 23px;
+    left: 50px;
+    transform: scale(0.65);
+    transform-origin: 0 0;
+  }
+  .camera .stage .controller--play,
+  .camera .stage .controller--pause {
+    transform: translate(276px, -88px) rotate(-3deg);
+  }
+  .camera .stage figcaption {
+    transform: scale(0.8) translate(-136px, 306px);
+  }
+  .camera .edit .figures {
+    height: auto;
+  }
+  .camera .edit figure {
+    transform: translate(40px, 0);
+  }
+  .camera .edit figure img {
+    width: 509px;
+  }
+  .camera .edit figcaption {
+    transform: scale(0.8) translate(27px, 742px);
+  }
+}
+
 /* Wireless */
 .wireless {
   margin-top: 202px;

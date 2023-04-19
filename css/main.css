@@ -2234,3 +2234,7 @@ footer .legal ul li:hover a {
     background-position: -500px -900px;
   }
 }
+
+.accessibility {
+  height: auto;
+}
